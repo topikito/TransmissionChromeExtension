@@ -1,8 +1,7 @@
 jQuery(document).ready(function()
 {
-
 	var loader 					= jQuery('#loader')
-	,	iframe 					= jQuery('#toshiframe')
+	,	iframe 					= jQuery('#transmissionFrame')
 	,	settings 				= jQuery('#settings')
 	,	saveSettingsButton 		= jQuery('#saveSettings')
 	,	transmissionUrlInput 	= jQuery('#transmissionUrl')
@@ -22,7 +21,7 @@ jQuery(document).ready(function()
 			settings.show();
 		}
 	}
-	,	saveSettings = function(newData) 
+	,	saveSettings = function(newData)
 	{
 		if (newData.transmissionUrl)
 		{

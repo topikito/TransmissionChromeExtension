@@ -1,19 +1,25 @@
 {
-  "name": "T2T: Torrent to Toshi",
-  "version": "1.0",
-  "manifest_version": 2,
-  "description": "Torrents, made easy.",
-  "icons": { "128" : "icon.png" , "16" : "icon.png" , "48" : "icon.png" , "256" : "icon.png", "512" : "icon.png"},
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_popup": "popup.html"
-  },
-  "permissions": [
-    "http://toshi.superdns.es/",
-    "http://*.googleapis.com/*"
-  ],
-  "content_scripts": [ {
-    "js": [ "jquery.min.js", "script.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
-  }]
+    "name":"T2B: Transmission to Browser",
+    "version":"1.0.1",
+    "manifest_version":2,
+    "description":"Torrents, made easy.",
+    "icons":{
+        "16":"assets/img/icon16.png",
+        "48":"assets/img/icon48.png",
+        "128":"assets/img/icon128.png"
+    },
+    "browser_action":{
+        "default_icon":"assets/img/icon512.png",
+        "default_popup":"src/popup.html"
+    },
+    "permissions":[
+        "http://toshi.superdns.es/",
+        "http://*.googleapis.com/*"
+    ],
+    "content_scripts":[
+        {
+            "js":[ "assets/js/jquery.min.js", "assets/js/script.js" ],
+            "matches":[ "http://*/*", "https://*/*"]
+        }
+    ]
 }
